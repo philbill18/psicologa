@@ -97,7 +97,10 @@ a {
     }
     #picture img {
 
-        height: 40vh;
+        height: 20vh;
 
+    }
+    #wave {
+        background-position: inherit!important;
     }
 }
