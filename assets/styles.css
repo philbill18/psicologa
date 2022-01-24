@@ -104,3 +104,5 @@ a {
         background-position: inherit!important;
     }
 }
+
+a:visited { outline: none; }
