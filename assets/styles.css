@@ -9,7 +9,7 @@ body {
     width: 300px;
 }
 
-#logo{
+#logo {
     padding: 1rem 10%;
 }
 
@@ -27,7 +27,7 @@ body {
 
 main {
     background-color: #D5F1FF;
-
+    padding: 2rem;
 }
 
 .acc {
@@ -63,13 +63,16 @@ a {
     color: black;
     text-decoration: none;
 }
+
 .borderPlusRadius:hover {
     background-color: aqua;
     transition: 0.5s;
 }
+
 #copyright {
     width: 450px;
-    margin: 2rem auto;
+    margin: 0 auto;
+    padding-top: 1rem;
 }
 
 .hero {
@@ -78,4 +81,4 @@ a {
     height: 500px;
     background-color: #ffffff;
     clip-path: ellipse(177% 100% at -46.52% 0%);
-    }
+}
