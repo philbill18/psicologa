@@ -20,8 +20,9 @@ body {
 }
 
 #picture img {
-    clip-path: polygon(30% 0%, 82% 3%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-    height: 90vh;
+    /* clip-path: polygon(30% 0%, 82% 3%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); */
+    height: 77vh;
+    clip-path: ellipse(50% 50% at 50% 50%);
 }
 
 main {
