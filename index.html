@@ -1,28 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Psicologa Daniela Sofia</title>
-    <meta name="description"
-    content="<%= langParsed.head_description %>" />
-  <meta property="og:image" content="/assets/pic.png">
-  <meta property="og:title" content="<%= langParsed.head_og_title %>">
-  <meta property="og:description"
-    content="<%= langParsed.head_og_desc %>">
-  <meta property="og:type" content="website">
-  <link rel="stylesheet" href="/assets/styles.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <title>Psicologa Daniela Sofia 👩🏻‍⚕️</title>
+    <meta name="description" content="<%= langParsed.head_description %>" />
+    <meta property="og:image" content="/assets/pic.png">
+    <meta property="og:title" content="<%= langParsed.head_og_title %>">
+    <meta property="og:description" content="<%= langParsed.head_og_desc %>">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/maus.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/maus.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/maus.png">
 
-  <!-- <link rel="alternate" hreflang="es" href="/es" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- <link rel="alternate" hreflang="es" href="/es" />
   <link rel="alternate" hreflang="en" href="/en" /> -->
 
 </head>
+
 <body>
-    
+    <header>
+        <div id="logo">
+            <img src="/assets/logo.png" alt="Psicologa Daniela" draggable="false"></div>
+        <div style="display: flex;">
+            <div style="width: 40%;"></div>
+            <div id="picture">
+                <img src="/assets/mausos.jpg" alt="Daniela Sofia" draggable="false">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="acc">
+            <div id="freeStuff" class="borderPlusRadius">Free booklets</div>
+            <div id="about" class="borderPlusRadius">About me</div>
+            <div id="mission" class="borderPlusRadius">Mission</div>
+            <a href="mailto:psicologadaniela@gmail.com?subject=Book an appointment" rel="noopener" class="borderPlusRadius">Book an
+                appointment</a>
+        </div>
+
+        <div id="social">
+           
+            <a href="https://www.instagram.com/psicologadanielasofia/" target="_blank" rel="noopener"><img src="/assets/insta.webp"
+                    alt="Follow on instagram" draggable="false"></a>
+                    <a href=" https://www.linkedin.com/in/daniela-ramon-zavala/" target="_blank" rel="noopener"><img src="/assets/linkedin.webp" alt="Follow on linkedin" draggable="false"></a>
+                <a href="tel:+51920859302" rel="noopener"><img src="/assets/telephone.webp" alt="Call" draggable="false"></a>
+                <a href="mailto:psicologadaniela@gmail.com?subject=Contact" rel="noopener"><img src="/assets/email.webp"
+                        alt="Write email" draggable="false"></a>
+        </div>
+
+        <div id="copyright"><img src="/assets/copyright.png" alt="copyright"></div>
+
+    </main>
+
     <script src="/assets/script.js"></script>
 </body>
+
 </html>
