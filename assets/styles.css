@@ -95,4 +95,9 @@ a {
     #social{
         width: 100%;
     }
+    #picture img {
+
+        height: 40vh;
+
+    }
 }
