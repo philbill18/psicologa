@@ -82,3 +82,17 @@ a {
     background-color: #ffffff;
     clip-path: ellipse(177% 100% at -46.52% 0%);
 }
+
+/* Responsive */
+@media (max-width: 800px) {
+    #copyright img {
+        width: 250px!important;
+    }
+    .borderPlusRadius{
+        width: 100%;
+    
+    }
+    #social{
+        width: 100%;
+    }
+}
