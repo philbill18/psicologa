@@ -1,12 +1,16 @@
 body {
     padding: 1rem 10%;
     font-family: 'Poppins', sans-serif;
-    background-color: #D5F1FF;
+    /* background-color: #D5F1FF; */
 }
 
 
 #logo img {
     width: 300px;
+}
+
+#logo{
+    padding: 1rem 10%;
 }
 
 #picture {
@@ -62,3 +66,15 @@ a {
     background-color: aqua;
     transition: 0.5s;
 }
+#copyright {
+    width: 450px;
+    margin: 2rem auto;
+}
+
+.hero {
+    display: block;
+    box-sizing: border-box;
+    height: 500px;
+    background-color: #ffffff;
+    clip-path: ellipse(177% 100% at -46.52% 0%);
+    }
