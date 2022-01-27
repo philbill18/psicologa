@@ -3,6 +3,9 @@ body {
     font-family: 'Poppins', sans-serif;
     /* background-color: #D5F1FF; */
 }
+body,html {
+    height: 100%;
+}
 
 
 #logo img {
@@ -26,7 +29,7 @@ body {
 }
 
 main {
-    background-color: #D5F1FF;
+    /* background-color: #D5F1FF; */
     padding: 2rem;
 }
 
@@ -47,7 +50,7 @@ main {
     display: block;
 }
 .borderPlusRadius:active{
-    background-color: aliceblue;
+    background-color: #bf6f6f;
 }
 .borderPlusRadiusHeading {
     border: solid black 2px;
