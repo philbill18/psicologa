@@ -214,6 +214,9 @@ padding: 0!important;
     #widthMobile{
         width: 100%!important;
     }
+    .item{
+        flex: 100%!important;
+    }
 }
 
 /* a:visited { outline: none; } */
