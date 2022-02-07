@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicologa Daniela Sofia 👩🏻‍⚕️</title>
+    <meta name="description" content="<%= langParsed.head_description %>" />
+    <meta property="og:image" content="/psicologa/assets/pic.png">
+    <meta property="og:title" content="<%= langParsed.head_og_title %>">
+    <meta property="og:description" content="<%= langParsed.head_og_desc %>">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="/psicologa/assets/styles.css">
+    <link rel="stylesheet" href="/psicologa/assets/reset.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/psicologa/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/psicologa/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/psicologa/favicon-16x16.png">
+    <link rel="manifest" href="/psicologa/site.webmanifest">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- <link rel="alternate" hreflang="es" href="/es" />
+  <link rel="alternate" hreflang="en" href="/en" /> -->
+
+</head>
+
+<body>
+    <h1 style="display: none;">Psychologist Therapy Consulting</h1>
+    <header
+        style="background-image: url('/psicologa/assets/bg2.png');background-size: 100% 100%; background-repeat: no-repeat; position: fixed;
+        width: 100%;z-index: 1;">
+        <div id="logo" style="display: flex;">
+            <img src="/psicologa/assets/logo.png" alt="Psicologa Daniela" draggable="false">
+            <nav id="navbar" style="width: 100%;">
+                <ul style="display: flex;justify-content: flex-end;height: 100%;">
+                    <a href="#" class="navbarElement" ><li>Home</li></a>
+                    <a id="Toprofile" class="navbarElement" onclick="scrollToTargetAdjusted(this)"><li>About</li></a>
+                    <a id="Tofree" class="navbarElement" onclick="scrollToTargetAdjusted(this)"><li>Materials</li></a>
+                    <a id="Toinstagram" class="navbarElement" onclick="scrollToTargetAdjusted(this)"><li>Blog</li></a>
+                    <a id="Toservices" class="navbarElement" onclick="scrollToTargetAdjusted(this)"><li>Service</li></a>
+                    <a id="Tocontact" class="navbarElement" onclick="scrollToTargetAdjusted(this)"><li >Contact</li></a>
+                </ul>
+            </nav>
+            <svg id="menuOpener" style="width:20px;cursor:pointer; display: none;margin: auto 0;" onclick="openNav()"
+                aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+                class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512">
+                <path fill="currentColor"
+                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+                </svg>
+
+
+
+        </div>
+    
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a id="Mobile" onclick="scrollToTargetAdjustedMobile(this)">Home</a>
+                <a id="Mobileprofile" onclick="scrollToTargetAdjustedMobile(this)">About</a>
+                <a id="Mobilefree" onclick="scrollToTargetAdjustedMobile(this)">Materials</a>
+                <a id="Mobileinstagram" onclick="scrollToTargetAdjustedMobile(this)">Blog</a>
+                <a id="Mobileservices" onclick="scrollToTargetAdjustedMobile(this)">Service</a>
+                <a id="Mobilecontact" onclick="scrollToTargetAdjustedMobile(this)">Contact</a>
+                <div id="social" style="margin-top: 2rem;/*! padding: 0 10%; */">
+
+                    <a href="https://www.instagram.com/psicologadanielasofia/" target="_blank" rel="noopener"><img
+                            src="/psicologa/assets/insta.webp" alt="Follow on instagram" draggable="false"
+                            style="width: unset;"></a>
+                    <a href=" https://www.linkedin.com/in/daniela-ramon-zavala/" target="_blank" rel="noopener"><img
+                            src="/psicologa/assets/linkedin.webp" alt="Follow on linkedin" draggable="false"
+                            style="width: unset;"></a>
+
+                    <a href="mailto:psicologadaniela@gmail.com?subject=Contact" rel="noopener" style=""><img
+                            src="/psicologa/assets/email.webp" alt="Write email" draggable="false"
+                            style="width: unset;"></a>
+                </div>
+                <div style="display: flex;width: 50%; justify-content: space-evenly;margin: 0 auto;margin-bottom: 1rem;">
+                    <img alt="" src="/psicologa/assets/esp.png" title="Español"
+                        style="height: 30px;width: 30px;cursor: pointer;" onclick="switchToSpanish()">
+                    <img alt="" src="/psicologa/assets/eng.png" title="English"
+                        style="height: 30px;width: 30px;cursor: pointer;" onclick="switchToEnglish()">
+                </div>
+                <div style="color: #818181; ">© 2022 Daniela Sofia</div>
+            </div>
+        </div>
+
+
+
+
+        <!-- <div class="hero">
+                <div class="content">
+                <h1>Example Hero!</h1>
+                <p>Example Hero!</p>
+                </div>
+                </div> -->
+
+        <div id="wave" style="display: flex;
+        height: 100%;
+        overflow: hidden;
+        position: relative;">
+            <div style="width: 50%;"></div>
+
+        </div>
+
+    </header>
+    <main style="padding-top: 200px;">
+        <!-- <div class="acc">
+           <a href="/psicologa/free-booklets.html"> <div id="freeStuff" class="borderPlusRadius">Free booklets</div></a>
+           <a href="/psicologa/about-me.html"> <div id="about" class="borderPlusRadius">About me</div></a> 
+           <a href="/psicologa/mission.html">  <div id="mission" class="borderPlusRadius">Mission</div></a> 
+            <a href="mailto:psicologadaniela@gmail.com?subject=Book an appointment" rel="noopener" class="borderPlusRadius">Book an
+                appointment</a>
+        </div> -->
+
+        <section id="intro" style="margin-bottom: 5rem!important; padding: 0 20%;">
+            <header style="text-align: center; width: 100%;">
+                <div style="font-size: 2.5rem;margin-bottom: 2rem;line-height: 1.5;">
+                    <span style="background-color: aliceblue;"> Your path to meet yourself, heal
+                    and
+                    grow has begun...</span></div>
+                <div style="font-size: 2rem; line-height: 1.5;">But remember: the road is not
+                    always uphill, making mistakes and
+                    falling is part of the process</div>
+            </header>
+
+        </section>
+        <section id="profile" class="flexDirectionRow" style="justify-content: space-evenly;">
+            <div id="picture" style="width: 50%;display: flex;justify-content: center;">
+                <img src="/psicologa/assets/mausos.jpg" alt="Daniela Sofia" draggable="false">
+            </div>
+            <div id="mobileVersion" >
+                <div id="widthMobile" style="width: 50%;display: flex;justify-content: center;">
+                    <img src="/psicologa/assets/mausos.jpg" alt="Daniela Sofia" draggable="false" style="width: 170px;">
+                </div>
+                <div id="welcomeMobile" style="font-weight: bold;font-size: 1.5rem;margin-bottom: 1rem;">Welcome! I'm Daniela Sofia</div>
+            </div>
+            <div id="textContainer" style="width: 50%;padding: 0 3rem;">
+                <div id="welcome" style="font-weight: bold;font-size: 1.5rem;margin-bottom: 1rem;">Welcome! I'm Daniela Sofia</div>
+                <div class="mobileText" style="line-height: 1.5;margin-bottom: 1rem;font-size: 1.2rem;">I have a master's degree in Global
+                    Mental Health
+                    and I am a psychotherapist.</div>
+                <div class="mobileText" style="line-height: 1.5;font-size: 1.2rem;">
+                    Psychology, therapy and
+                    mental health can be intimidating
+                    and having some difficulty in these areas might scare you. For that reason I have decided to
+                    create friendly and accessible
+                    content to create awareness,
+                    help you reflect and feel
+                    accompanied on this roller coaster that is
+                </div>
+
+            </div>
+        </section>
+        <section id="free" class="paddingTopBottom" style="display: flex;flex-direction: column;">
+            <header style="text-align: center; width: 100%;font-size: 2.5rem;line-height: 1.5;">Click here to download
+                free work guides 👇</header>
+            <div class="content">
+
+
+                <div id="freebies">
+                    <a href="/psicologa/assets/TEST.pdf" download="File1.pdf" title="Download">
+
+                        <div class="divContainer">
+                            <img src="/psicologa/assets/300x300.svg" alt="">
+                            <img class="downloadHover" src="/psicologa/assets/download.svg" alt="" style="width: 70px;">
+                        </div>
+                        <div class="textAlignCenter">Title 1</div>
+                    </a>
+                    <a href="/psicologa/assets/TEST.pdf" download="File2.pdf" title="Download">
+                        <div class="divContainer">
+                            <img src="/psicologa/assets/300x300.svg" alt="">
+                            <img class="downloadHover" src="/psicologa/assets/download.svg" alt="" style="width: 70px;">
+                        </div>
+                        <div class="textAlignCenter">Title 2</div>
+                    </a>
+                    <a href="/psicologa/assets/TEST.pdf" download="File3.pdf" title="Download">
+                        <div class="divContainer">
+                            <img src="/psicologa/assets/300x300.svg" alt="">
+                            <img class="downloadHover" src="/psicologa/assets/download.svg" alt="" style="width: 70px;">
+                        </div>
+                        <div class="textAlignCenter">Title 3</div>
+                    </a>
+                </div>
+
+
+            </div>
+        </section>
+        <section id="mission" class="flexDirectionCol paddingTopBottom" style="background-color: aliceblue;">
+            <header style="text-align: center; width: 100%;font-size: 2.5rem;line-height: 1.5;">MY MISSION</header>
+            <cite>"Create accessible and entertaining content on mental
+                health to accompany you in the process of healing"</cite>
+        </section>
+        <section id="instagram" class="flexDirectionCol paddingTopBottom">
+            <header style="text-align: center; width: 100%;font-size: 2.5rem;line-height: 1.5;">EXPLORE MY CONTENT ON
+                INSTAGRAM</header>
+            <div class="posts">
+              <a href="https://www.instagram.com/psicologadanielasofia/" target="_blank" rel="noopener"><img src="/psicologa/assets/insta1.jpg" alt=""></a> 
+              <a href="https://www.instagram.com/psicologadanielasofia/" target="_blank" rel="noopener"><img src="/psicologa/assets/insta2.jpg" alt=""></a> 
+              <a href="https://www.instagram.com/psicologadanielasofia/" target="_blank" rel="noopener"><img src="/psicologa/assets/insta3.jpg" alt=""></a> 
+              <a href="https://www.instagram.com/psicologadanielasofia/" target="_blank" rel="noopener"><img src="/psicologa/assets/insta4.jpg" alt=""></a> 
+              <a href="https://www.instagram.com/psicologadanielasofia/" target="_blank" rel="noopener"><img src="/psicologa/assets/insta5.jpg" alt=""></a> 
+              <a href="https://www.instagram.com/psicologadanielasofia/" target="_blank" rel="noopener"><img src="/psicologa/assets/insta6.jpg" alt=""></a> 
+
+
+            </div>
+        </section>
+        <section id="action" class="paddingTopBottom"
+            style="text-align: center;font-size: 2.5rem;line-height: 1.5;background-color: aliceblue;">Are
+            you ready to know more about yourself? </section>
+        <section id="services" class="flexDirectionCol">
+            <header style="text-align: center; width: 100%;font-size: 2.5rem;line-height: 1.5;">SERVICES</header>
+            <div class="container">
+                <div class="item">
+                    <img class="serviceIcon" src="/psicologa/assets/brain.svg" alt="" style="width: 50px;">
+                    <div class="serviceHeading">Psychotherapy</div>
+                    <div class="serviceContent">Psychotherapy sessions for
+                        adolescents, young people and adults</div>
+                </div>
+                <div class="item">
+                    <img class="serviceIcon" src="/psicologa/assets/smile.svg" alt="" style="width: 50px;">
+                    <div class="serviceHeading">Workshops</div>
+                    <div class="serviceContent">Psychoeducational workshops and emotional well-being
+                    
+                        </div>
+                </div>
+                <div class="item">
+                    <img class="serviceIcon" src="/psicologa/assets/virus.svg" alt="" style="width: 50px;">
+                    <div class="serviceHeading">Support</div>
+                    <div class="serviceContent">Emotional support and counseling after
+                        STI diagnosis</div>
+                </div>
+                <div class="item">
+                    <img class="serviceIcon" src="/psicologa/assets/heart.svg" alt="" style="width: 50px;">
+                    <div class="serviceHeading">Guidance and counseling</div>
+                    <div class="serviceContent">General guidance and counseling</div>
+                </div>
+              </div>
+        </section>
+        <section id="contact" class="flexDirectionCol paddingTopBottom">
+            <header style="text-align: center; width: 100%;font-size: 2.5rem;line-height: 1.5;">CONTACT</header>
+
+            <div id="freemeeting" style="display: flex;justify-content: space-evenly;">
+                <img src="/psicologa/assets/free-meeting.svg" alt="time" style="width: 30px;">
+                <div style="max-width: 70%;text-align: center;">
+                    <div style="line-height: 1.3; font-size: 1.2rem;">Consultation of 15 min. FREE</div>
+              
+                </div>
+            
+            </div>
+
+            <div id="offer" style="display: flex;justify-content: space-evenly;">
+                <img src="/psicologa/assets/help.svg" alt="time" style="width: 30px;">
+                <div style="max-width: 70%;text-align: center;">
+                    <div style="line-height: 1.3; font-size: 1.2rem;">Sessions of psychotherapy, guidance and counseling have a duration of 45 min. (Cost 50 soles)</div>
+              
+                </div>
+            
+            </div>
+            <div id="hours" style="display: flex;justify-content: space-evenly;">
+                <img src="/psicologa/assets/hours.svg" alt="time" style="width: 30px;">
+                <div style="max-width: 70%;text-align: center;">
+                    <div style="line-height: 1.3; font-size: 1.2rem;">9am - 7pm (Monday-Friday)</div>
+                    <div style="line-height: 1.3;font-size: 1.2rem;">9am - 12pm and 3pm - 6pm (Saturday)</div>
+                </div>
+            
+            </div>
+
+        </section>
+
+      
+            <div id="social">
+
+                <a href="https://www.instagram.com/psicologadanielasofia/" target="_blank" rel="noopener"><img
+                        src="/psicologa/assets/insta.webp" alt="Follow on instagram" draggable="false"></a>
+                <a href=" https://www.linkedin.com/in/daniela-ramon-zavala/" target="_blank" rel="noopener"><img
+                        src="/psicologa/assets/linkedin.webp" alt="Follow on linkedin" draggable="false"></a>
+                <a href="tel:+51920859302" rel="noopener"><img src="/psicologa/assets/telephone.webp" alt="Call"
+                        draggable="false"></a>
+                <a href="mailto:psicologadaniela@gmail.com?subject=Contact" rel="noopener"><img
+                        src="/psicologa/assets/email.webp" alt="Write email" draggable="false"></a>
+            </div>
+    
+            <footer>
+                <div style="margin: auto 0; font-weight: bold;">© 2022 Daniela Sofia</div>
+                <div style="display: flex;margin-left: 2rem;width: 150px; justify-content: space-evenly;">
+                <img alt="" src="/psicologa/assets/esp.png" title="Español" style="height: 30px;object-fit: cover;width: 30px;cursor: pointer;" onclick="switchToSpanish()">
+                <img alt="" src="/psicologa/assets/eng.png" title="English" style="height: 30px;object-fit: cover;width: 30px;cursor: pointer;" onclick="switchToEnglish()">
+            </div>
+        </footer>
+     
+
+
+    </main>
+
+    <script src="/psicologa/assets/script.js"></script>
+</body>
+
+</html>
