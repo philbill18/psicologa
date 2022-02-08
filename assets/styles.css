@@ -217,6 +217,12 @@ padding: 0!important;
     .item{
         flex: 100%!important;
     }
+    #headline{
+        font-size: 2rem;
+    }
+    #subheadline{
+        font-size: 1.5rem;
+    }
 }
 
 /* a:visited { outline: none; } */
