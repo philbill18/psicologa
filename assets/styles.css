@@ -285,6 +285,9 @@ main {
 .divContainer:hover .downloadHover {
     display: block;
 }
+.divContainer:hover .pdfBg {
+    opacity: 0.3;
+}
 
 .textAlignCenter {
     text-align: center;
@@ -386,7 +389,7 @@ flex-direction: row;
 
 #freebies img{
     width: 250px;
-    height: 250px;
+    /* height: 250px; */
 }
 
 #freebies {
